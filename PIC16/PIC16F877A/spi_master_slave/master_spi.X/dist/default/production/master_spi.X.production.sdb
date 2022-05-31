@@ -1,0 +1,200 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"29 C:\Users\HP\MPLABXProjects\master_spi.X\main.c
+[e E885 . `uc
+SLAVE_MODE 0
+MASTER_MODE 1
+]
+"33
+[e E881 . `uc
+SLAVE_1 0
+SLAVE_2 1
+SLAVE_3 2
+]
+"8 C:\Users\HP\MPLABXProjects\master_spi.X\spi_dv.c
+[e E882 . `uc
+SLAVE_MODE 0
+MASTER_MODE 1
+]
+"38
+[e E878 . `uc
+SLAVE_1 0
+SLAVE_2 1
+SLAVE_3 2
+]
+"10 C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"22 C:\Users\HP\MPLABXProjects\master_spi.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"3 C:\Users\HP\MPLABXProjects\master_spi.X\spi_dv.c
+[v _SPI0_Initialize SPI0_Initialize `(v  1 e 1 0 ]
+"14
+[v _SPI0_ReadyRead SPI0_ReadyRead `(uc  1 e 1 0 ]
+"21
+[v _SPI0_SlaveSelect SPI0_SlaveSelect `(v  1 e 1 0 ]
+"40
+[v _SPI0_Write SPI0_Write `(v  1 e 1 0 ]
+"7 C:\Users\HP\MPLABXProjects\master_spi.X\timer_dv.c
+[v _timer0_isr timer0_isr `II(v  1 e 1 0 ]
+"27
+[v _TIMER0_Delay TIMER0_Delay `(v  1 e 1 0 ]
+"33
+[v _TIMER0_Initialize TIMER0_Initialize `(v  1 e 1 0 ]
+"60 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877a.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+[s S58 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"234
+[u S67 . 1 `S58 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES67  1 e 1 @6 ]
+"809
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+[s S105 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"836
+[s S111 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[u S116 . 1 `S105 1 . 1 0 `S111 1 . 1 0 ]
+[v _SSPCONbits SSPCONbits `VES116  1 e 1 @20 ]
+"1256
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @129 ]
+"1376
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1500
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1831
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+[s S135 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"1885
+[s S144 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S149 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DATA 1 0 :1:5 
+]
+[s S155 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S160 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S165 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S170 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[u S175 . 1 `S135 1 . 1 0 `S144 1 . 1 0 `S149 1 . 1 0 `S155 1 . 1 0 `S160 1 . 1 0 `S165 1 . 1 0 `S170 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES175  1 e 1 @148 ]
+"2574
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2634
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"2883
+[v _TMR0IE TMR0IE `VEb  1 e 0 @93 ]
+"2886
+[v _TMR0IF TMR0IF `VEb  1 e 0 @90 ]
+"2973
+[v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
+"2979
+[v _TRISC5 TRISC5 `VEb  1 e 0 @1085 ]
+"21 C:\Users\HP\MPLABXProjects\master_spi.X\main.c
+[v _counts counts `uc  1 e 1 0 ]
+"3 C:\Users\HP\MPLABXProjects\master_spi.X\timer_dv.c
+[v _msCounts msCounts `VEui  1 e 2 0 ]
+"4
+[v _delayMS delayMS `VEui  1 e 2 0 ]
+"5
+[v _ledBlinkTimeCounter ledBlinkTimeCounter `VEui  1 e 2 0 ]
+"22 C:\Users\HP\MPLABXProjects\master_spi.X\main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"40
+} 0
+"33 C:\Users\HP\MPLABXProjects\master_spi.X\timer_dv.c
+[v _TIMER0_Initialize TIMER0_Initialize `(v  1 e 1 0 ]
+{
+"42
+} 0
+"27
+[v _TIMER0_Delay TIMER0_Delay `(v  1 e 1 0 ]
+{
+[v TIMER0_Delay@ms ms `i  1 p 2 3 ]
+"32
+} 0
+"40 C:\Users\HP\MPLABXProjects\master_spi.X\spi_dv.c
+[v _SPI0_Write SPI0_Write `(v  1 e 1 0 ]
+{
+[v SPI0_Write@slave slave `uc  1 a 1 wreg ]
+[v SPI0_Write@slave slave `uc  1 a 1 wreg ]
+[v SPI0_Write@chr chr `uc  1 p 1 0 ]
+"43
+[v SPI0_Write@slave slave `uc  1 a 1 1 ]
+"45
+} 0
+"21
+[v _SPI0_SlaveSelect SPI0_SlaveSelect `(v  1 e 1 0 ]
+{
+[v SPI0_SlaveSelect@slave slave `uc  1 a 1 wreg ]
+[v SPI0_SlaveSelect@slave slave `uc  1 a 1 wreg ]
+"23
+[v SPI0_SlaveSelect@slave slave `uc  1 a 1 5 ]
+"39
+} 0
+"3
+[v _SPI0_Initialize SPI0_Initialize `(v  1 e 1 0 ]
+{
+[v SPI0_Initialize@mode mode `uc  1 a 1 wreg ]
+[v SPI0_Initialize@mode mode `uc  1 a 1 wreg ]
+[v SPI0_Initialize@mode mode `uc  1 a 1 3 ]
+"12
+} 0
+"7 C:\Users\HP\MPLABXProjects\master_spi.X\timer_dv.c
+[v _timer0_isr timer0_isr `II(v  1 e 1 0 ]
+{
+"26
+} 0
