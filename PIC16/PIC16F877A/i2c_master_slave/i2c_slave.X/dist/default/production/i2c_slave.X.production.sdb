@@ -1,0 +1,243 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"63 D:\Projects\Microchip\PIC16\PIC16F877A\i2c_master_slave\i2c_slave.X\i2c_dv.c
+[e E878 . `uc
+SLAVE_MODE 0
+MASTER_MODE 1
+]
+"38 D:\Projects\Microchip\PIC16\PIC16F877A\i2c_master_slave\i2c_slave.X\main.c
+[e E896 . `uc
+SLAVE_MODE 0
+MASTER_MODE 1
+]
+"5 C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"3 D:\Projects\Microchip\PIC16\PIC16F877A\i2c_master_slave\i2c_slave.X\i2c_dv.c
+[v _I2C_CheckFlag I2C_CheckFlag `(v  1 e 1 0 ]
+"8
+[v _I2C_StartCond I2C_StartCond `(v  1 e 1 0 ]
+"15
+[v _I2C_StopCond I2C_StopCond `(v  1 e 1 0 ]
+"44
+[v _I2C_Write I2C_Write `(uc  1 e 1 0 ]
+"53
+[v _I2C_Read I2C_Read `(uc  1 e 1 0 ]
+"63
+[v _I2C_Initialize I2C_Initialize `(v  1 e 1 0 ]
+"4 D:\Projects\Microchip\PIC16\PIC16F877A\i2c_master_slave\i2c_slave.X\lcd_dv.c
+[v _LCD_WriteNibble LCD_WriteNibble `(v  1 e 1 0 ]
+"13
+[v _LCD_Write LCD_Write `(v  1 e 1 0 ]
+"30
+[v _LCD_WriteCmd LCD_WriteCmd `(v  1 e 1 0 ]
+"35
+[v _LCD_WriteData LCD_WriteData `(v  1 e 1 0 ]
+"41
+[v _LCD_WriteBuffer LCD_WriteBuffer `(v  1 e 1 0 ]
+"56
+[v _LCD_Initialize LCD_Initialize `(v  1 e 1 0 ]
+"28 D:\Projects\Microchip\PIC16\PIC16F877A\i2c_master_slave\i2c_slave.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"7 D:\Projects\Microchip\PIC16\PIC16F877A\i2c_master_slave\i2c_slave.X\timer_dv.c
+[v _timer0_isr timer0_isr `II(v  1 e 1 0 ]
+"27
+[v _TIMER0_Delay TIMER0_Delay `(v  1 e 1 0 ]
+"33
+[v _TIMER0_Initialize TIMER0_Initialize `(v  1 e 1 0 ]
+"60 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16Fxxx_DFP/1.3.42/xc8\pic\include\proc\pic16f877a.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+[s S176 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"234
+[u S185 . 1 `S176 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES185  1 e 1 @6 ]
+"341
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+[s S61 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"358
+[u S70 . 1 `S61 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES70  1 e 1 @8 ]
+"809
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"816
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+"1256
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @129 ]
+[s S123 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1393
+[u S132 . 1 `S123 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES132  1 e 1 @134 ]
+"1500
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1755
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
+"1824
+[v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
+"1831
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+"2379
+[v _ACKDT ACKDT `VEb  1 e 0 @1165 ]
+"2382
+[v _ACKEN ACKEN `VEb  1 e 0 @1164 ]
+"2385
+[v _ACKSTAT ACKSTAT `VEb  1 e 0 @1166 ]
+"2418
+[v _BF BF `VEb  1 e 0 @1184 ]
+"2502
+[v _CKP CKP `VEb  1 e 0 @164 ]
+"2574
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2634
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"2637
+[v _PEN PEN `VEb  1 e 0 @1162 ]
+"2796
+[v _RSEN RSEN `VEb  1 e 0 @1161 ]
+"2811
+[v _SEN SEN `VEb  1 e 0 @1160 ]
+"2883
+[v _TMR0IE TMR0IE `VEb  1 e 0 @93 ]
+"2886
+[v _TMR0IF TMR0IF `VEb  1 e 0 @90 ]
+"2973
+[v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
+"2976
+[v _TRISC4 TRISC4 `VEb  1 e 0 @1084 ]
+"26 D:\Projects\Microchip\PIC16\PIC16F877A\i2c_master_slave\i2c_slave.X\main.c
+[v _recChar recChar `uc  1 e 1 0 ]
+"3 D:\Projects\Microchip\PIC16\PIC16F877A\i2c_master_slave\i2c_slave.X\timer_dv.c
+[v _msCounts msCounts `VEui  1 e 2 0 ]
+"4
+[v _delayMS delayMS `VEui  1 e 2 0 ]
+"5
+[v _ledBlinkTimeCounter ledBlinkTimeCounter `VEui  1 e 2 0 ]
+"28 D:\Projects\Microchip\PIC16\PIC16F877A\i2c_master_slave\i2c_slave.X\main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"51
+} 0
+"33 D:\Projects\Microchip\PIC16\PIC16F877A\i2c_master_slave\i2c_slave.X\timer_dv.c
+[v _TIMER0_Initialize TIMER0_Initialize `(v  1 e 1 0 ]
+{
+"42
+} 0
+"35 D:\Projects\Microchip\PIC16\PIC16F877A\i2c_master_slave\i2c_slave.X\lcd_dv.c
+[v _LCD_WriteData LCD_WriteData `(v  1 e 1 0 ]
+{
+[v LCD_WriteData@chr chr `uc  1 a 1 wreg ]
+[v LCD_WriteData@chr chr `uc  1 a 1 wreg ]
+"37
+[v LCD_WriteData@chr chr `uc  1 a 1 1 ]
+"38
+} 0
+"56
+[v _LCD_Initialize LCD_Initialize `(v  1 e 1 0 ]
+{
+"77
+} 0
+"30
+[v _LCD_WriteCmd LCD_WriteCmd `(v  1 e 1 0 ]
+{
+[v LCD_WriteCmd@chr chr `uc  1 a 1 wreg ]
+[v LCD_WriteCmd@chr chr `uc  1 a 1 wreg ]
+"32
+[v LCD_WriteCmd@chr chr `uc  1 a 1 1 ]
+"33
+} 0
+"13
+[v _LCD_Write LCD_Write `(v  1 e 1 0 ]
+{
+[v LCD_Write@type type `uc  1 a 1 wreg ]
+[v LCD_Write@type type `uc  1 a 1 wreg ]
+[v LCD_Write@chr chr `uc  1 p 1 5 ]
+"15
+[v LCD_Write@type type `uc  1 a 1 7 ]
+"28
+} 0
+"27 D:\Projects\Microchip\PIC16\PIC16F877A\i2c_master_slave\i2c_slave.X\timer_dv.c
+[v _TIMER0_Delay TIMER0_Delay `(v  1 e 1 0 ]
+{
+[v TIMER0_Delay@ms ms `i  1 p 2 3 ]
+"32
+} 0
+"4 D:\Projects\Microchip\PIC16\PIC16F877A\i2c_master_slave\i2c_slave.X\lcd_dv.c
+[v _LCD_WriteNibble LCD_WriteNibble `(v  1 e 1 0 ]
+{
+[v LCD_WriteNibble@chr chr `uc  1 a 1 wreg ]
+[v LCD_WriteNibble@chr chr `uc  1 a 1 wreg ]
+"6
+[v LCD_WriteNibble@chr chr `uc  1 a 1 3 ]
+"10
+} 0
+"53 D:\Projects\Microchip\PIC16\PIC16F877A\i2c_master_slave\i2c_slave.X\i2c_dv.c
+[v _I2C_Read I2C_Read `(uc  1 e 1 0 ]
+{
+"56
+[v I2C_Read@rcChar rcChar `uc  1 a 1 4 ]
+"61
+} 0
+"63
+[v _I2C_Initialize I2C_Initialize `(v  1 e 1 0 ]
+{
+[v I2C_Initialize@mode mode `E878  1 a 1 wreg ]
+[v I2C_Initialize@mode mode `E878  1 a 1 wreg ]
+[v I2C_Initialize@addr addr `uc  1 p 1 14 ]
+[v I2C_Initialize@b_rate b_rate `ui  1 p 2 15 ]
+"65
+[v I2C_Initialize@mode mode `E878  1 a 1 4 ]
+"80
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.35\pic\sources\c90\common\aldiv.c
+[v ___aldiv __aldiv `(l  1 e 4 0 ]
+{
+"10
+[v ___aldiv@quotient quotient `l  1 a 4 10 ]
+"11
+[v ___aldiv@sign sign `uc  1 a 1 9 ]
+[v ___aldiv@counter counter `uc  1 a 1 8 ]
+"5
+[v ___aldiv@divisor divisor `l  1 p 4 0 ]
+[v ___aldiv@dividend dividend `l  1 p 4 4 ]
+"41
+} 0
+"7 D:\Projects\Microchip\PIC16\PIC16F877A\i2c_master_slave\i2c_slave.X\timer_dv.c
+[v _timer0_isr timer0_isr `II(v  1 e 1 0 ]
+{
+"26
+} 0
